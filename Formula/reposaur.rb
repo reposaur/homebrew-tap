@@ -5,13 +5,13 @@
 class Reposaur < Formula
   desc "Open source compliance tool for development platforms"
   homepage "https://reposaur.com"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/reposaur/reposaur/releases/download/v0.7.0/reposaur_0.7.0_Darwin_arm64.tar.gz"
-      sha256 "1543046c4a0fb801e0a5058cadb7b1973797ea911fb762c0a17aa7db6e06b241"
+      url "https://github.com/reposaur/reposaur/releases/download/v0.7.1/reposaur_0.7.1_Darwin_arm64.tar.gz"
+      sha256 "44de94e4b16ce14091c96d079cd956fe66d8d3a88c8119631f90b7ff6b2b61cb"
 
       def install
         bin.install "rsr"
@@ -21,8 +21,8 @@ class Reposaur < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/reposaur/reposaur/releases/download/v0.7.0/reposaur_0.7.0_Darwin_x86_64.tar.gz"
-      sha256 "0080b53d9884b07ba3fcc93cd5b21d87c846875516e6f88446c973000dd0f8a5"
+      url "https://github.com/reposaur/reposaur/releases/download/v0.7.1/reposaur_0.7.1_Darwin_x86_64.tar.gz"
+      sha256 "c29fb39b880b05b955510a5a1a1f97d5cfe8531a383be4e2699f467555445c43"
 
       def install
         bin.install "rsr"
@@ -35,8 +35,8 @@ class Reposaur < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/reposaur/reposaur/releases/download/v0.7.0/reposaur_0.7.0_Linux_arm64.tar.gz"
-      sha256 "fb7942194000421742b8755c33cb88ac24cd013ac146b445e451e2ebc22d5e37"
+      url "https://github.com/reposaur/reposaur/releases/download/v0.7.1/reposaur_0.7.1_Linux_arm64.tar.gz"
+      sha256 "cdfd25928af7f29131fe8a7509a157b7f0ffb6223383e002984548923b07476c"
 
       def install
         bin.install "rsr"
@@ -46,8 +46,8 @@ class Reposaur < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/reposaur/reposaur/releases/download/v0.7.0/reposaur_0.7.0_Linux_x86_64.tar.gz"
-      sha256 "889ac4e477db8f2e23ec626f26712cc29781b1b5c8b424cf2c348f57aab614a1"
+      url "https://github.com/reposaur/reposaur/releases/download/v0.7.1/reposaur_0.7.1_Linux_x86_64.tar.gz"
+      sha256 "c936ad5461a2044c3cd563f5c91514d0a7f4ed117d514e06c219e41a901feb88"
 
       def install
         bin.install "rsr"
